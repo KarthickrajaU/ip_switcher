@@ -5,7 +5,7 @@ IPswitcher is an automated tool for changing IP.
 
 it will change your IP automatically by presetted values[such as interval{default 30minutes} and rounds{default 10 rounds}]
 
-## git pull link:
+## Git pull link:
 	gh repo clone KarthickrajaU/ip_switcher
 	
 ## Requirement:
@@ -16,10 +16,12 @@ it will change your IP automatically by presetted values[such as interval{defaul
 ## Installation:
 1. run this command 
 	`sudo apt-get install curl torify xterm`
+2. give permission to execute
+	`chmod +x auto.sh`
 
-2. copy IPswitcher to /usr/bin folder
+3. copy IPswitcher to /usr/bin folder
 	
 	`sudo cp ipswitcher /usr/bin/`
 
-3. then execute 
+4.execute 
 `ipswitcher` in your terminal (You can access from every where in your pc)
