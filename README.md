@@ -6,7 +6,7 @@ IPswitcher is an automated tool for changing IP.
 it will change your IP automatically by presetted values[such as interval{default 30minutes} and rounds{default 10 rounds}]
 
 ## git pull link:
-	git clone 	
+	gh repo clone KarthickrajaU/ipswitcher	
 
 ## Requirement:
 1. curl
