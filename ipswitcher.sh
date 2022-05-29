@@ -1,16 +1,17 @@
 #! /bin/bash
 start=0
 
-echo -e "\e[31m
+echo -e '\e[31m
 
-________     ______ __    _______     ________     __________
-___  __ \    ___  //_/    __  __ \    ___  __ \    ___  ____/
-__  / / /    __  ,<       _  / / /    __  / / /    __  __/   
-_  /_/ /     _  /| |      / /_/ /     _  /_/ /     _  /___   
-/_____/      /_/ |_|      \____/      /_____/      /_____/   
-                                                             
 
-\e[0m"
+ ██   ██  █████   ██████ ██   ██     ██     ██  ██████  
+ ██   ██ ██   ██ ██      ██  ██      ██    ██  ██    ██ 
+ ███████ ███████ ██      █████       ██   ██   ██    ██ 
+ ██   ██ ██   ██ ██      ██  ██      ██  ██    ██    ██ 
+ ██   ██ ██   ██  ██████ ██   ██     ██ ██      ██████  
+                                                       
+                                                           
+\e[0m'
 
 echo -e "\e[32mAutomated IP switcher\e[0m"
 echo -e "\e[32mDeveloped by Karthick Raja\e[0m"
@@ -44,7 +45,7 @@ if [ $start != 0 ];then
 echo "[Status] closing existing terminal"
 close_term
 fi
-echo $term_status
+echo -e "\e[33m$term_status\e[0m"
 current_tab=$(tty)
 ls /dev/pts|sed 's/ /\n/g'>/var/tmp/old.tmp.1
 xterm &
@@ -59,7 +60,6 @@ return $open_tab
 check_term
 id=$(echo $?)
 
-#echo $(pidof tor)
 tor_stat=$(echo $?)
 if [ '$tor_stat' == '0' ];then
 echo "Please run tor first then run this script"
@@ -83,7 +83,11 @@ echo "Setted max rounds to swap the IP : $max "
 
 for i in $(seq 1 $max);do
 if [ $i == 1 ];then
-OP=`curl -s $ip_site`
+OP="hidden"
+#comment out below line if you don't want to know your REAL IP 
+#OP=`curl -s $ip_site`
+
+
 echo "Your original ip:$OP"
 fi
 
