@@ -84,7 +84,7 @@ echo "Setted max rounds to swap the IP : $max "
 for i in $(seq 1 $max);do
 if [ $i == 1 ];then
 OP="hidden"
-#comment out below line if you don't want to know your REAL IP 
+#comment out below line if you want to know your REAL IP 
 #OP=`curl -s $ip_site`
 
 
