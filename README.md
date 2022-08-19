@@ -9,7 +9,7 @@ it will help you in your reconnaisance and exploitation phase in penetration tes
 
 it will make your request from dynamic IP .Set your time interval 3minutes/below website bot detector and IPS/IDS can't block you.
 
-### Note: This tool only for education purpose
+### Note: This tool only for educational purpose only
 
 ![ipswitch](https://user-images.githubusercontent.com/74852121/170251754-7a5bbf7a-f69a-4b30-97c0-d833dfa3587d.png)
 
@@ -24,13 +24,15 @@ it will make your request from dynamic IP .Set your time interval 3minutes/below
 
 ## Installation:
 1. run this command 
-	`sudo apt-get install curl torify xterm`
+	>`sudo apt-get install curl torify xterm`
 2. give permission to execute
-	`chmod +x auto.sh`
+	>`chmod +x auto.sh`
 
 3. copy IPswitcher to /usr/bin folder
-	
-	`sudo cp ipswitcher /usr/bin/`
+	>`sudo cp ipswitcher /usr/bin/`
 
 4.execute 
 `ipswitcher` in your terminal (You can access from every where in your pc)
+
+## WorkFlow Video
+https://www.youtube.com/watch?v=W4fmFE_WXOM&ab_channel=HackIO
