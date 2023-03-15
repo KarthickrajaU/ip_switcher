@@ -1,18 +1,6 @@
 #! /bin/bash
 start=0
 
-echo -e '\e[31m
-
-
- ██   ██  █████   ██████ ██   ██     ██     ██  ██████  
- ██   ██ ██   ██ ██      ██  ██      ██    ██  ██    ██ 
- ███████ ███████ ██      █████       ██   ██   ██    ██ 
- ██   ██ ██   ██ ██      ██  ██      ██  ██    ██    ██ 
- ██   ██ ██   ██  ██████ ██   ██     ██ ██      ██████  
-                                                       
-                                                           
-\e[0m'
-
 echo -e "\e[32mAutomated IP switcher\e[0m"
 echo -e "\e[32mDeveloped by Karthick Raja\e[0m"
 echo -e "\e[32mhttps://github.com/karthickrajaU\e[0m"
